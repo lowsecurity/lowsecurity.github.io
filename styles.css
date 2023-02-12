@@ -1,3 +1,5 @@
-body{
-    font-family: "Dosis ExtraBold 800", "sans-serif";
+@font-face {
+    font-family: Dosis-ExtraBold;
+    src: url('fonts/Dosis-ExtraBold.ttf');
 }
+
