@@ -1,7 +1,7 @@
-#HighSecurity's Homepage
-##Shows social media links, contact information, achievements, etc.
+# HighSecurity's Homepage
+## Shows social media links, contact information, achievements, etc.
 
-###CHECKLIST
+### CHECKLIST
 
 * [] Make a base theme for the page
     * [] Universalize theme
