@@ -23,6 +23,6 @@ body {
 
 #reloadButton:active {
     background-color: maroon;
-    color: darkred;
+    color: white;
     border-color: black;
 }
