@@ -26,3 +26,11 @@ body {
     color: white;
     border-color: black;
 }
+
+.header {
+    background-color: black;
+    box-shadow:
+        0 0 60px 30px #fff,
+        0 0 100px 60px #d161ff,
+        0 0 140px 90px #ee73ff;
+}
