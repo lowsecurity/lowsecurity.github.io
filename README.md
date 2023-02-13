@@ -3,6 +3,6 @@
 
 ### CHECKLIST
 
-* [] Make a base theme for the page
-    * [] Universalize theme
-* [] Figure out "mulitple css pages"
+* [ ] Make a base theme for the page
+    * [ ] Universalize theme
+* [ ] Figure out "mulitple css pages"
