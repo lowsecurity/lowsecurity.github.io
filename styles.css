@@ -21,4 +21,8 @@ body {
     box-shadow: 2px 2px 0px black;
 }
 
-#reloadButton:
+#reloadButton:active {
+    background-color: maroon;
+    color: darkred;
+    border-color: black;
+}
