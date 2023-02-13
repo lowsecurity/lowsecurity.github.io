@@ -28,7 +28,8 @@ body {
 }
 
 div {
-    background-color: black;
+    background: black;
+    color: white;
     overflow: hidden;
     padding: 20px 10px;
     box-shadow:
