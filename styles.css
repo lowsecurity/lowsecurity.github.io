@@ -1,5 +1,8 @@
-h1{
+@font-face {
     font-family: Dosis-ExtraBold;
-    src: url(fonts/Dosis-ExtraBold.ttf);
+    src: url(/fonts/Dosis-ExtraBold.ttf);
 }
 
+body {
+    font-family: Dosis-Extrabold;
+}
