@@ -27,13 +27,11 @@ body {
     border-color: black;
 }
 
-div {
-    background: black;
+.header {
+    background: indigo;
     color: white;
     overflow: hidden;
-    padding: 20px 10px;
-    box-shadow:
-        0 0 60px 30px #fff,
-        0 0 100px 60px #d161ff,
-        0 0 140px 90px #ee73ff;
+}
+.hsdev {
+    align-items: center;
 }
