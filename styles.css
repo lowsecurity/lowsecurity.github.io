@@ -31,7 +31,9 @@ body {
     background: indigo;
     color: white;
     overflow: hidden;
+    margin: 0;
+    size: 
 }
 .hsdev {
-    align-items: center;
+    box-shadow: 0 0 100px 50px black;
 }
