@@ -1,40 +1,43 @@
 @font-face {
-    font-family: Dosis-ExtraBold;
-    src: url(/fonts/Dosis-ExtraBold.ttf);
+    font-family: SourceSansPro-SemiBold;
+    src: url(/fonts/SourceSansPro-SemiBold.ttf);
 }
 
-body {
-    font-family: Dosis-Extrabold;
+@font-face {
+    font-family: SourceSansPro-Bold;
+    src: url(/fonts/SourceSansPro-Bold.ttf);
 }
 
-#reloadButton {
-    border-style: solid;
-    border-color:maroon;
-    background-color: tomato;
-    color: maroon; 
-    border-radius: 12px;
-    padding: 5px;
 
-}
-
-#reloadButton:hover {
-    box-shadow: 2px 2px 0px black;
-}
-
-#reloadButton:active {
-    background-color: maroon;
-    color: white;
-    border-color: black;
-}
-
-.header {
-    background: indigo;
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: indigo;
     color: white;
     overflow: hidden;
     margin: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+}
 
+.navbar{
+    color:white;
+    text-decoration: none;
+    font-family: SourceSansPro-Bold;
+}
+
+.navbar:visited{
+    color:white;
+    text-decoration: none;
 }
 
 .hsdev {
-    box-shadow: 0 0 100px 50px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
+
