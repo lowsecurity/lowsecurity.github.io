@@ -1,43 +1,164 @@
-@font-face {
-    font-family: SourceSansPro-SemiBold;
-    src: url(/fonts/SourceSansPro-SemiBold.ttf);
-}
 
-@font-face {
-    font-family: SourceSansPro-Bold;
-    src: url(/fonts/SourceSansPro-Bold.ttf);
-}
-
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: indigo;
-    color: white;
-    overflow: hidden;
+:root {
+    --primary-color: #FFC107;
+    --secondary-color: #212121;
+    --background-color: #F5F5F5;
+    --text-color: #212121;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    width: 100%;
-    height: 60px;
-    font-size: 20px;
-}
-
-.navbar{
-    color:white;
+    padding: 0;
+    background-image:url("https://static.vecteezy.com/system/resources/previews/002/417/815/original/vectorial-illustration-of-the-germany-flag-free-vector.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: var(--text-color);
+    
+  }
+  
+  a {
+    color: var(--primary-color);
     text-decoration: none;
-    font-family: SourceSansPro-Bold;
+  }
+  
+
+  
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+  
+
+  
+  section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: all 0.2s ease;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    transition: all 0.2s ease;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.2s ease;
+  }
+  
+
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  
+  section:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+  }
+  
+  h2:hover {
+    transform: scale(1.1);
+  }
+  
+  ul li:hover {
+    color: var(--primary-color);
+  }
+  
+  img:hover {
+    transform: scale(.99);
+  }
+  
+header:hover{
+    transform:scale(1.05)
 }
 
-.navbar:visited{
-    color:white;
-    text-decoration: none;
+footer{
+    text-align: center;
 }
 
-.hsdev {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+.linkyboi{
+    color: rgba(0, 0, 0)
 }
 
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: #555;
+  }
+  
