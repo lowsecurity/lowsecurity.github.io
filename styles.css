@@ -1,0 +1,76 @@
+/* Dark blurple theme */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1333;
+  color: #E0E4F5;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  cursor: none; /* hide default cursor */
+}
+
+header {
+  background-color: rgba(88, 101, 242, 0.3);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #aab4f5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color .3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+main {
+  padding: 6rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #8c9eff;
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: 800px;
+  font-size: 1.2rem;
+  color: #c3c8e8;
+}
+
+/* Custom cursor */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(88, 101, 242, 0.8);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform .1s ease;
+  mix-blend-mode: difference;
+}
