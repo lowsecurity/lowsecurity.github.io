@@ -1,6 +1,5 @@
-// Custom cursor and interactive effects
 document.addEventListener('DOMContentLoaded', () => {
-  // create cursor element
+  // create custom cursor element
   const cursor = document.createElement('div');
   cursor.classList.add('cursor');
   document.body.appendChild(cursor);
@@ -37,6 +36,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     main.addEventListener('mouseleave', () => {
       main.style.transform = '';
+    });
+  }
+
+  // cursor hover states on links and buttons
+  const hoverTargets = document.querySelectorAll('a, button');
+  hoverTargets.forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.classList.add('hover');
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.classList.remove('hover');
+    });
+  });
+
+  // reveal animations for elements with .reveal class
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length > 0) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        } else {
+          entry.target.classList.remove('active');
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => {
+      revealObserver.observe(el);
     });
   }
 });
