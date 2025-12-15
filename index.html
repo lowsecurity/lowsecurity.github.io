@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio Page">
-    <meta name="author" content="HighSecurity">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="icon" href="/favicon.ico">
-    <title>HighSecurity Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Page">
+  <meta name="author" content="HighSecurity">
+  <link rel="stylesheet" href="/styles.css">
+  <title>HighSecurity Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="projects.html">Projects</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Welcome to my portfolio</h1>
-        <p>Explore my past projects and achievements.</p>
-    </main>
-    <script src="./main.js"></script>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero reveal">
+      <h1>Welcome to my portfolio</h1>
+      <p>Explore my work, projects and achievements.</p>
+    </section>
+
+    <section id="projects" class="projects reveal">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card reveal">
+          <h3>Project One</h3>
+          <p>A brief description of the first project highlighting key features and technologies used.</p>
+          <a href="projects.html">Learn more</a>
+        </div>
+        <div class="card reveal">
+          <h3>Project Two</h3>
+          <p>An overview of another project, focusing on the challenge and the solution provided.</p>
+          <a href="projects.html">Learn more</a>
+        </div>
+        <div class="card reveal">
+          <h3>Project Three</h3>
+          <p>Summary of a notable project showcasing creativity and technical skills.</p>
+          <a href="projects.html">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about reveal">
+      <h2>About Me</h2>
+      <p>I'm a passionate developer with experience in web technologies and cybersecurity. I enjoy building projects that combine aesthetics with strong functionality.</p>
+    </section>
+
+    <section id="contact" class="contact reveal">
+      <h2>Contact</h2>
+      <p>Feel free to reach out via email at <a href="mailto:example@example.com">example@example.com</a> for collaborations or inquiries.</p>
+    </section>
+  </main>
+
+  <script src="/main.js"></script>
 </body>
 </html>
